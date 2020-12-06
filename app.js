@@ -1,6 +1,7 @@
 var input = document.querySelector("#txt-input");
 var button = document.querySelector("#btn-translate");
 var output = document.querySelector("#txt-output");
+var clear = document.querySelector('#btn-clear');
 
 function catchHandler(error) {
     // console.log("error occured: ", error);
@@ -18,8 +19,14 @@ function translate() {
     .catch(catchHandler);
 }
 
+function clearInput() {
+    input.value = '';
+    output.value = '';
+}
+
 button.addEventListener("click", translate);
 
+clear.addEventListener('click', clearInput);
 
 
 // ex02
