@@ -5,7 +5,7 @@ var clear = document.querySelector('#btn-clear');
 
 function catchHandler(error) {
     // console.log("error occured: ", error);
-    alert("sever down\n only 5 translations are allowed every hour");
+    alert("Sever down\nOnly 5 translations are allowed every hour");
 }
 
 function translate() {
